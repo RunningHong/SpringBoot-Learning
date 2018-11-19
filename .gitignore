@@ -1,0 +1,4 @@
+## 忽略一些文件
+.idea/
+build
+out
