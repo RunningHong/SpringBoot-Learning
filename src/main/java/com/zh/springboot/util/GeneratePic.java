@@ -14,6 +14,11 @@ public class GeneratePic {
 
     /**
      * 复制图片并压缩入口类
+     * 使用方法：
+     *      （1）把需要复制的文件放到代码中写好的【模板文件路径】
+     *      （2）修改代码中【文件保存的路径】
+     *      （3）修改【生成图片数量】
+     *      （4）修改【压缩文件为zip路径】
      * @author RunningHong at 2018/12/13 10:53
      * @param
      * @return
@@ -32,7 +37,7 @@ public class GeneratePic {
         // 生成文件
         distributionGenerate(tempPicPath, saveFolderpath, pictureNum);
 
-        // 压缩文件为zip
+        // 压缩文件为zip路径
         String zipPath = "G:\\copyPicture\\116100502.zip";
         OutputStream zipOS = new FileOutputStream(new File(zipPath));
         toZip(saveFolderpath, zipOS, true);
